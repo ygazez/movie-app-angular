@@ -1,5 +1,5 @@
 <div
-  class="h-screen w-screen flex flex-col items-center font-mono bg-stone-200"
+  class="h-full w-screen flex flex-col items-center font-mono bg-stone-200"
 >
   <div class="w-full h-24 flex items-center justify-end">
     <div
@@ -13,10 +13,15 @@
     <a routerLink="/movie"> Movies</a>
   </div>
     <div
-      class="w-24 h-16 rounded-full bg-stone-700 flex justify-center items-center m-16 text-white"
+      class="w-24 h-16 rounded-full bg-stone-700 flex justify-center items-center text-white"
     >
       <a routerLink="/login">Login</a>
     </div>
+    <div
+    class="w-24 h-16 rounded-full bg-stone-700 flex justify-center items-center m-4 text-white"
+  >
+    <button (click)="logOutClick()">Logout</button>
+  </div>
   </div>
 
 <h3 *ngFor="let data of favouriteMovies" class=" m-4">

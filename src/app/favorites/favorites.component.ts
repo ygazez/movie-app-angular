@@ -17,6 +17,10 @@ export class FavoritesComponent implements OnInit {
     if( favLocalMovie!==null){
       this.favouriteMovies = JSON.parse(favLocalMovie);
     }
+
+  }
+  logOutClick():void{
+    window.localStorage.clear();
   }
 
 }
